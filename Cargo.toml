@@ -5,5 +5,5 @@ authors = ["Ross Todd <rssmtdd@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rand = "*"
-piston_window = "*"
+rand = "0.6.5"
+piston_window = "0.89.0"
