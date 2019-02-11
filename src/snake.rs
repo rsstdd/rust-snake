@@ -6,6 +6,7 @@ use draw::draw_block;
 
 const SNAKE_COLOR: Color = [0.00, 0.80, 0.00, 1.00];
 
+#[derive(Copy, Clone, PartialEq)]
 pub enum Direction {
     Up,
     Down,
@@ -119,7 +120,7 @@ impl Snake {
         let blk = self.tail.clone().unwrap();
         self.body.push_back(blk);
     }
-s
+
     pub fn overlap_tail(&self, x: i32, y: i32) -> bool {
         let mut ch = 0;
         for block in &self.body {
