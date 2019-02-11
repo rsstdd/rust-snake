@@ -93,7 +93,7 @@ impl Snake {
         self.tail = Some(removed_block);
     }
 
-    pub fn head_direcction(&self) -> Direction {
+    pub fn head_direction(&self) -> Direction {
         self.direction
     }
 
@@ -119,7 +119,7 @@ impl Snake {
         let blk = self.tail.clone().unwrap();
         self.body.push_back(blk);
     }
-
+s
     pub fn overlap_tail(&self, x: i32, y: i32) -> bool {
         let mut ch = 0;
         for block in &self.body {
